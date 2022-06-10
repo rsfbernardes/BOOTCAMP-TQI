@@ -9,4 +9,4 @@
     4. Se os elementos possuirem a classe dark-mode, modifique seus estilos. Caso contrário, volte os estilos para o original
 
     Exemplo
-https://github.com/stebsnusch/basecamp-javascript/raw/main/DOM/dark-mode-exercicio.gif
+    ![Exemplo](/dark-mode-exercicio.gif)
