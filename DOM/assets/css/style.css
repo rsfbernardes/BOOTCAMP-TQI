@@ -18,6 +18,7 @@ body {
 body.dark-mode {
     color: var(--color-light);
     background-color: var(--color-dark);
+    transition: all 1s linear;
 }
 
 main {
@@ -42,7 +43,7 @@ button {
     background-color: var(--color-dark);
     color: var(--color-light);
     border: none;
-    transition: all .5 linear;
+    transition: all 1s linear;
 }
 
 button:hover {
@@ -53,6 +54,11 @@ button:hover {
 button.dark-mode {
     background-color: var(--color-light);
     color: var(--color-dark);
+}
+
+button.dark-mode:hover {
+    cursor: pointer;
+    background-color: var(--color-footer);
 }
 
 footer {
