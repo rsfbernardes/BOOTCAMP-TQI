@@ -11,16 +11,58 @@
 body {
     font-size: 62.5%; /* 10px */
     font-family: cursive;
-    width: 100vw;
-    height: 100vh;
     color: var(--color-dark);
+    background-color: var(--color-light);
+}
+
+body.dark-mode {
+    color: var(--color-light);
     background-color: var(--color-dark);
-    display: flex;
 }
 
 main {
-    width: 40rem;
-    height: 30rem;
-    border: 1px solid var(--color-dark);
-    background-color: #797A7C;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
+button {
+    font-size: 1.4rem;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 4rem;
+    margin-top: .75rem;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border: none;
+    transition: all .5 linear;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--color-footer);
+}
+
+button.dark-mode {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+footer {
+    font-size: 1rem;
+    background-color: var(--color-footer);
+    width: 100vw;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
 }
