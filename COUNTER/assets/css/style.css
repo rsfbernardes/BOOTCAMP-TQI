@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+    /* 1rem = 16px (User Agent) = 100% (User Agent) */
+    font-size: 62.5%;   /* 1rem = 10px */
+
+    --color-counter-border: #9C9C9E;
+    --color-background-body: #FEFDFF;
+    --color-header: #7CBE4F;
+    --color-background-container: #FEFDFF;
+    --color-background-decrease: #329932;
+    --color-background-increase: #329932;
+    --color-counter: #7CBE4F;
+    --color-decrease: #8CF793;
+    --color-increase: #8CF793;
+}
+
+body {
+    background-color: var(--color-header);
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+header {
+    color: var(--color-background-container);
+    margin: 5rem auto 0;
+    font-size: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1{
+    justify-content: center;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40rem;
+    height: 22rem;
+    margin: 4rem auto 0;
+    background-color: var(--color-background-container);
+    border-radius: 2rem;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    color: var(--color-counter);
+    font-weight: bold;
+    width: 30rem;
+    height: 8rem;
+    border: 1px solid var(--color-counter);
+    border-radius: 2rem;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width: 30rem;
+    height: 8rem;
+}
+
+.button_decrease {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13rem;
+    height: 6rem;
+    border: none;
+    font-size: 7rem;
+    color: var(--color-decrease);
+    background-color: var(--color-background-decrease);
+    border-radius: 2rem;
+}
+
+.button_increase{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13rem;
+    height: 6rem;
+    border: none;
+    font-size: 7rem;
+    color: var(--color-increase);
+    background-color: var(--color-background-increase);
+    border-radius: 2rem;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.bt_decrease {
+    color: var(--color-decrease);
+}
+
+.bt_decrease:hover {
+    transform: scale(3);
+    margin-top: -2rem;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.bt_increase {
+    color: var(--color-increase);
+}
+
+.bt_increase:hover {
+    transform: scale(2);
+    cursor: pointer;
+}
+
+#restart {
+    width: 10.5rem;
+    height: 5.5rem;
+    background-color: var(--color-background-container);
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--color-counter);
+    margin: 2rem auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+}
+
+#restart:hover {
+    cursor: pointer;
+}
