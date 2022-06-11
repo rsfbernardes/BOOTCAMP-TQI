@@ -10,17 +10,17 @@ function changeClass() {
 }
 
 function changeText() {
-    const lightMode = "Light Mode ON"
-    const darkMode = "Dark Mode ON"
+    const lightMode = "Light Mode"
+    const darkMode = "Dark Mode"
 
     if (body.classList.contains(darkModeClass)) {
-        h1.innerHtml = darkMode
-        button.innerHtml = lightMode
+        button.innerText = lightMode
+        h1.innerText = darkMode + " ON"
         return
     }
 
-    h1.innerHtml = lightMode
-    button.innerHtml = darkMode
+    button.innerText = darkMode
+    h1.innerText = lightMode + " ON"
 }
 
 function toggle() {

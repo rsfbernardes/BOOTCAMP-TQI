@@ -13,12 +13,13 @@ body {
     font-family: cursive;
     color: var(--color-dark);
     background-color: var(--color-light);
+    transition: all 0.5s linear;
 }
 
 body.dark-mode {
     color: var(--color-light);
     background-color: var(--color-dark);
-    transition: all 1s linear;
+    transition: all 0.5s linear;
 }
 
 main {
