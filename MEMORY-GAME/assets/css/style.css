@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    --color-background-body: #36bdbd;
+    --color-shadow-card: rgba(1, 1 ,1, .3);
+    --color--background-card: #FFF;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color: var(--color-background-body);
+}
+
+.memory-game {
+    height: 640px;
+    width: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: calc(33.333% -10px);
+    width: calc(25% - 10px);
+    margin: 5px;
+    position: relative;
+    box-shadow: 1px 1px 1px var(--color-shadow-card);
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.card:active {
+    transform: scale(0.97);
+    transition: transform .3s;
+}
+
+.card-front,
+.card-back {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    border-radius: 5px;
+    background: var(--color--background-card);
+}
