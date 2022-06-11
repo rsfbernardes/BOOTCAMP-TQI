@@ -40,6 +40,10 @@ body {
     transition: transform .3s;
 }
 
+img {
+    background-image: transparent;
+}
+
 .card-front,
 .card-back {
     height: 100%;
