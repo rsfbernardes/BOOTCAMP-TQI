@@ -6,6 +6,10 @@ export default function IfoodCounter() {
     const [value, setValue] = useState(1)
     const [buttonClass, setButtonClass] = useState('counter-button-minus-active')
 
+    useEffect(() => {
+        document.getElementById('total').innerHTML = value * 5.00
+    },[value])
+
     function increase() {
         setValue(value + 1)
         setButtonClass('counter-button-minus-active')
@@ -37,6 +41,7 @@ export default function IfoodCounter() {
             >
                 +
             </button>
+            <button id='total'>0,00</button>
         </div>
     )
 }
