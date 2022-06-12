@@ -1,12 +1,13 @@
 import './App.css';
 import SmartCounter from '../Smartcounter/SmartCounter';
+import IfoodCounter from '../Ifoodcounter/IfoodCounter';
 
 function App() {
 
   return (
     <>
-      <h1>Hello World</h1>
-      <SmartCounter />
+      <h1>Ifood counter button</h1>
+      <IfoodCounter />
     </>
   );
 }
