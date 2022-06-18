@@ -1,9 +1,20 @@
 import Properties from "./Properties";
 
-function App() {
+function App(props) {
+
+  function anyFunc() {
+    console.log("i'm a function")
+  }
 
   return (
-    <Properties />
+    <Properties 
+      booleanValue={true}
+      functionValue={anyFunc}
+      obj={ {
+        property: "value",
+      } }
+      arr={ [0, 1, 2, 3] }
+    />
   );
 }
 
