@@ -19,7 +19,7 @@ function Properties(props) {
 
 Properties.defaultProps = {
     numb: 8,
-    string: 'React Typechecking',
+    str: "React Typechecking",
 }
 
 Properties.propTypes = {
@@ -27,7 +27,7 @@ Properties.propTypes = {
     func: PropTypes.func.isRequired,
     number: PropTypes.number,
     object: PropTypes.object.isRequired,
-    string: PropTypes.string,
+    str: PropTypes.string,
     array: PropTypes.array.isRequired,
 }
 
