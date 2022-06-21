@@ -8,13 +8,19 @@ function Profile() {
                 <img src="https://avatars.githubusercontent.com/u/61915671?v=4" alt="Avatar of user" />
             </Styled.ProfilePhoto>
             <Styled.ProfileData>
-                <div>Rodrigo Bernardes</div>
-                <div>Username:</div>
-                <span>rsfbernardes</span>
-                <div>location: </div>
-                <span>Uberlândia</span>
-                <div>Bio: </div>
-                <span>I'm from Brazil, married, father of a girl.\r\nPassionate about sports and programming</span>
+                <h1>Rodrigo Bernardes</h1>
+                <h4>Username:
+                    <span> rsfbernardes</span>
+                </h4>
+                <h4>Company:
+                    <span>TQI</span>
+                </h4>
+                <h4>location:
+                    <span>Uberlândia</span>
+                </h4>
+                <h4>Bio:
+                    <span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum nam quas aperiam minima, deleniti necessitatibus odio, rem nisi, dignissimos unde corporis expedita. Voluptates maiores architecto velit dolore recusandae. Consequatur, vitae.</span>
+                </h4>
             </Styled.ProfileData>
         </Styled.WrapperProfile>
     )
