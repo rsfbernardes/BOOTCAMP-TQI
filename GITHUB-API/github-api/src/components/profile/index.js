@@ -11,7 +11,7 @@ function Profile() {
             <Styled.ProfileData>
                 <h1>Rodrigo Bernardes</h1>
                 <h4>Username:
-                    <span> rsfbernardes</span>
+                    <a href="https://github.com/rsfbernardes" target="_blank" rel="noopener noreferrer">rsfbernardes</a>
                 </h4>
                 <h4>Company:
                     <span>TQI</span>
@@ -20,7 +20,7 @@ function Profile() {
                     <span>Uberlândia</span>
                 </h4>
                 <h4>Blog:
-                    <span> http://blog.com</span>
+                    <span>http://blog.com</span>
                 </h4>
                 <UserStatus />
             </Styled.ProfileData>

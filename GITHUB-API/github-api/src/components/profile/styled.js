@@ -26,12 +26,11 @@ export const ProfileData = styled.div`
 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: ;
     padding: 0 0 0 10px;
 
     && span {
        font-weight: normal;
+       margin-left: 5px;
     }
 
     && h1 {
@@ -40,5 +39,11 @@ export const ProfileData = styled.div`
 
     && h4 {
         margin: 2.5px 0 0 0;
+    }
+
+    && a {
+        text-decoration: none;
+        margin-left: 5px;
+        color: blue;
     }
 `
