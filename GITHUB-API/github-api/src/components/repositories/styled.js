@@ -25,6 +25,7 @@ export const WrapperTab = styled(Tab)`
 
     &:focus {
         box-shadow: 0 0 0.4em gray;
+        outline: none;
     }
 `
 
