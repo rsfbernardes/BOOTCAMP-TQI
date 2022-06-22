@@ -20,7 +20,7 @@ function Profile() {
                     <span>Uberlândia</span>
                 </h4>
                 <h4>Blog:
-                    <span>http://blog.com</span>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">http://blog.com</a>
                 </h4>
                 <UserStatus />
             </Styled.ProfileData>
