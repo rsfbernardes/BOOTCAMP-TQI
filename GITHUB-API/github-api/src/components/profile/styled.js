@@ -7,7 +7,7 @@ export const WrapperProfile = styled.div`
     justify-content: flex-start;
     font-size: 18px;
     margin: 0 8px;
-    font-family: sans-serif;
+    font-family: 'Stoke' ,sans-serif;
     font-weight: bold;
 `
 
