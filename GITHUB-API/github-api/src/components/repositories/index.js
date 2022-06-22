@@ -1,4 +1,5 @@
 import React from 'react'
+import RepositoriesItem from '../reposytories-item'
 import * as Styled from './styled'
 
 function Repositories() {
@@ -11,8 +12,20 @@ function Repositories() {
         <Styled.WrapperTab >Repositories</Styled.WrapperTab>
         <Styled.WrapperTab >Starred</Styled.WrapperTab>
       </Styled.WrapperTabList>
-      <Styled.WrapperTabPanel>Repositories</Styled.WrapperTabPanel>
-      <Styled.WrapperTabPanel>Starred</Styled.WrapperTabPanel>
+      <Styled.WrapperTabPanel>
+        <RepositoriesItem
+          name="30-seconds-of-code"
+          linkToRepo="https://github.com/rsfbernardes/30-seconds-of-code"
+          fullName="rsfbernardes/30-seconds-of-code"
+        />
+      </Styled.WrapperTabPanel>
+      <Styled.WrapperTabPanel>
+        <RepositoriesItem
+          name="benits"
+          linkToRepo="https://github.com/benits/benits"
+          fullName="benits/benits"
+          />
+      </Styled.WrapperTabPanel>
     </Styled.WrapperTabs>
   )
 }
