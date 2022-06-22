@@ -1,4 +1,5 @@
 import React from 'react'
+import UserStatus from '../userStatus'
 import * as Styled from './styled'
 
 function Profile() {
@@ -18,9 +19,10 @@ function Profile() {
                 <h4>location:
                     <span>Uberlândia</span>
                 </h4>
-                <h4>Bio:
-                    <span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum nam quas aperiam minima, deleniti necessitatibus odio, rem nisi, dignissimos unde corporis expedita. Voluptates maiores architecto velit dolore recusandae. Consequatur, vitae.</span>
+                <h4>Blog:
+                    <span> http://blog.com</span>
                 </h4>
+                <UserStatus />
             </Styled.ProfileData>
         </Styled.WrapperProfile>
     )
