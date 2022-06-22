@@ -1,8 +1,11 @@
 import React from 'react'
+import * as Styled from './styled'
 
 function Repositories() {
   return (
-    <div>Repositories</div>
+    <Styled.Container>
+      <div>Repositories</div>
+    </Styled.Container>
   )
 }
 
