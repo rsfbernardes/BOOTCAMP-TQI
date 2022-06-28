@@ -3,17 +3,20 @@ import Input from "./components/input";
 import Profile from "./components/profile";
 import Repositories from "./components/repositories";
 import UserStatus from "./components/userStatus";
+import GithubProvider from "./providers/github-provider";
 
 function App() {
   return (
     <main>
-      < Layout>
-        <Input />
-        <Profile >
-          <UserStatus />
-        </Profile>
-        <Repositories />
-      </ Layout >
+      <GithubProvider>
+        < Layout>
+          <Input />
+          <Profile >
+            <UserStatus />
+          </Profile>
+          <Repositories />
+        </ Layout >
+      </GithubProvider>
     </main>
   );
 }
