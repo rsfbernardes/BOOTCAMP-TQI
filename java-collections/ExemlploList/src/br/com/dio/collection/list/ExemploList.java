@@ -1,9 +1,6 @@
 package br.com.dio.collection.list;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class ExemploList {
 
@@ -99,5 +96,26 @@ public class ExemploList {
 
             System.out.println("Mostre a primeira nota da nova Lista removendo-o: ")
         */
+
+        System.out.println("Crie uma lista chamada notas2 " +
+                "e coloque todos os elementos da List ArrayList nessa nova Lista: ");
+
+        List<Double> notas2 = new LinkedList<>();
+
+        notas2.add(7d);
+        notas2.add(8.5);
+        notas2.add(9.3);
+        notas2.add(5d);
+        notas2.add(7d);
+        notas2.add(0d);
+        notas2.add(3.6);
+
+        System.out.println("notas2 = " + notas2.toString());
+
+        System.out.println("Mostre a primeira nota da lista sem removê-lo: " + notas2.get(0));
+        System.out.println("notas2 = " + notas2.toString());
+
+        System.out.println("Mostre a primeira nota da nova Lista removendo-o: " + notas2.remove(0));
+        System.out.println("notas2 = " + notas2.toString());
     }
 }
