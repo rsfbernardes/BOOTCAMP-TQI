@@ -18,8 +18,19 @@ public class Main {
 
         Customer Rodrigo = new Customer("Rodrigo", "06751639600");
         Account rodrigoAccount = new Account(Rodrigo);
+        Customer Denise = new Customer("Denise", "06525800684");
+        Account deniseAccount = new Account(Denise);
 
         System.out.println(rodrigoAccount);
+        System.out.println(deniseAccount);
+
+        rodrigoAccount.deposit(1000.00);
+        rodrigoAccount.printAccountBallance();
+        rodrigoAccount.transfer(500.00, deniseAccount);
+        rodrigoAccount.withdraw(100.00);
+
+        rodrigoAccount.printAccountBallance();
+        deniseAccount.printAccountBallance();
 
 
 
