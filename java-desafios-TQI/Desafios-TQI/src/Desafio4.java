@@ -39,7 +39,7 @@ public class Desafio4{
             if (((N + M) % 2 == 0 && escolha1.equalsIgnoreCase("PAR")) ||
                     ((N + M) % 2 != 0 && escolha1.equalsIgnoreCase("IMPAR"))) System.out.println(nome1);
             else if (((N + M) % 2 == 0 && escolha2.equalsIgnoreCase("PAR")) ||
-                    ((N + M) % 2 != 0 && escolha2.equalsIgnoreCase("IMPAR"))) System.out.println(nome2);System.out.println(nome2);
+                    ((N + M) % 2 != 0 && escolha2.equalsIgnoreCase("IMPAR"))) System.out.println(nome2);
         }
     }
 }
