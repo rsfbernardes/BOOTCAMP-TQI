@@ -46,6 +46,16 @@ public class Account implements IAccount{
     }
 
     @Override
+    public void loan(double value) {
+        this.deposit(value);
+    }
+
+    @Override
+    public void loanPayment(double value) {
+        this.withdraw(value);
+    }
+
+    @Override
     public void printAccountBallance() {
         System.out.printf("Name: %s%n", this.customer.getName());
         System.out.printf("Agency: %d%n", this.agency);

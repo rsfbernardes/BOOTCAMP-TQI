@@ -29,9 +29,10 @@ public class Main {
         rodrigoAccount.transfer(500.00, deniseAccount);
         rodrigoAccount.withdraw(100.00);
 
+        deniseAccount.loan(10000.00);
+
         rodrigoAccount.printAccountBallance();
         deniseAccount.printAccountBallance();
-
 
 
 

@@ -8,5 +8,9 @@ public interface IAccount {
 
     void transfer(double value, IAccount account);
 
+    void loan(double value);
+
+    void loanPayment(double value);
+
     void printAccountBallance();
 }
