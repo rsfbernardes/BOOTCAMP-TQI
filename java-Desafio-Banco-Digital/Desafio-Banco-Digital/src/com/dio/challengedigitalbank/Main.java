@@ -17,9 +17,9 @@ public class Main {
 //        System.out.println("");
 
         Customer Rodrigo = new Customer("Rodrigo", "06751639600");
-        Account rodrigoAccount = new Account(Rodrigo);
+        CurrentAccount rodrigoAccount = new CurrentAccount(Rodrigo);
         Customer Denise = new Customer("Denise", "06525800684");
-        Account deniseAccount = new Account(Denise);
+        SavingAccount deniseAccount = new SavingAccount(Denise);
 
         System.out.println(rodrigoAccount);
         System.out.println(deniseAccount);

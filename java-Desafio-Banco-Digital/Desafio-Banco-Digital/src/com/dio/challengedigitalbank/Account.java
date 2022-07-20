@@ -6,13 +6,13 @@ public class Account implements IAccount{
     private static int SEQUENTIAL = 1;
 
     protected int agency;
-    protected int account;
+    protected int accountNumber;
     protected double ballance;
     protected Customer customer;
 
     public Account(Customer customer) {
         this.agency = Account.DEFAULT_AGENCY;
-        this.account = Account.SEQUENTIAL++;
+        this.accountNumber = Account.SEQUENTIAL++;
         this.ballance = 0;
         this.customer = customer;
     }
@@ -22,7 +22,7 @@ public class Account implements IAccount{
     }
 
     public int getAccount() {
-        return account;
+        return accountNumber;
     }
 
     public double getBallance() {
@@ -57,22 +57,11 @@ public class Account implements IAccount{
 
     @Override
     public void printAccountBallance() {
+        System.out.println("=====================================");
         System.out.printf("Name: %s%n", this.customer.getName());
         System.out.printf("Agency: %d%n", this.agency);
-        System.out.printf("Name: %d%n", this.account);
+        System.out.printf("Name: %d%n", this.accountNumber);
         System.out.printf("Ballance: %.2f%n", this.ballance);
-    }
-
-    @Override
-    public String toString() {
-        return "Account{" +
-                "agency=" + agency +
-                ", account=" + account +
-                ", ballance=" + ballance +
-                ", customer{" +
-                "name: " + customer.getName() +
-                ",cpf: " + customer.getCpf() +
-                    '}' +
-                '}';
+        System.out.println("=====================================");
     }
 }
