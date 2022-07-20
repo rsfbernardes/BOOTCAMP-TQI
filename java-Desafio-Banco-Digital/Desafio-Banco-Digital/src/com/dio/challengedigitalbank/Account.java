@@ -1,5 +1,8 @@
 package com.dio.challengedigitalbank;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Account implements IAccount{
 
     private static final int DEFAULT_AGENCY = 1;
@@ -9,6 +12,8 @@ public class Account implements IAccount{
     protected int accountNumber;
     protected double ballance;
     protected Customer customer;
+
+    protected List<Account> accounts;
 
     public Account(Customer customer) {
         this.agency = Account.DEFAULT_AGENCY;
@@ -53,6 +58,10 @@ public class Account implements IAccount{
     @Override
     public void loanPayment(double value) {
         this.withdraw(value);
+    }
+
+    public void initializeAccountList() {
+        this.accounts = new ArrayList<>();
     }
 
     @Override

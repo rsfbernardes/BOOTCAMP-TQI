@@ -1,41 +1,36 @@
 package com.dio.challengedigitalbank;
 
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
 
-//        int menu;
-//
-//        Scanner scanner = new Scanner(System.in);
-//
-//        System.out.println("*** Digital Bank ***");
-//        System.out.println("1 - Create an account");
-//        System.out.println("2 - Log into an account");
-//        System.out.println("");
-//        System.out.println("");
+        List<Account> accounts = new ArrayList<>();
 
-        Customer Rodrigo = new Customer("Rodrigo", "06751639600");
-        CurrentAccount rodrigoAccount = new CurrentAccount(Rodrigo);
-        Customer Denise = new Customer("Denise", "06525800684");
-        SavingAccount deniseAccount = new SavingAccount(Denise);
+        Customer joao = new Customer("Joao", "123456789");
+        CurrentAccount joaoAccount = new CurrentAccount(joao);
+        accounts.add(joaoAccount);
 
-        System.out.println(rodrigoAccount);
-        System.out.println(deniseAccount);
+        Customer maria = new Customer("Maria", "987654321");
+        SavingAccount mariaAccount = new SavingAccount(maria);
+        accounts.add(mariaAccount);
 
-        rodrigoAccount.deposit(1000.00);
-        rodrigoAccount.printAccountBallance();
-        rodrigoAccount.transfer(500.00, deniseAccount);
-        rodrigoAccount.withdraw(100.00);
+        joaoAccount.printAccountBallance();
+        mariaAccount.printAccountBallance();
 
-        deniseAccount.loan(10000.00);
+        joaoAccount.deposit(1000.00);
+        joaoAccount.printAccountBallance();
+        joaoAccount.transfer(500.00, mariaAccount);
+        joaoAccount.withdraw(100.00);
 
-        rodrigoAccount.printAccountBallance();
-        deniseAccount.printAccountBallance();
+        mariaAccount.loan(10000.00);
+        mariaAccount.loanPayment(1000.00);
 
+        joaoAccount.printAccountBallance();
+        mariaAccount.printAccountBallance();
 
-
-
+        System.out.println(accounts);
     }
 }
